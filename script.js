@@ -16,6 +16,7 @@ class Game {
     restart() {
         this.turn = true;
         this.value = false;
+        this.canIPlay=true;
         this.boxesArray = [
             ['', '', ''],
             ['', '', ''],
@@ -32,6 +33,7 @@ class Game {
             ['', '', '']
         ];
         this.value = false;
+        this.canIPlay=true;
         this.scoreFirst = 0;
         this.scoreSecond = 0;
 
@@ -83,6 +85,8 @@ class Game {
                 i % 3 === 1 ? this.boxesArray[2][1] = OX :
                 this.boxesArray[2][2] = OX
         }
+
+        console.log(this.boxesArray);
     }
 }
 
@@ -126,7 +130,6 @@ function starting() {
                     }
                 }
                 newGame.turn = !newGame.turn;
-                // this.checking();
             })
         }
     }
@@ -144,7 +147,7 @@ document.getElementsByClassName("restart")[0].addEventListener("click", () => {
         boxes[i].innerHTML = "";
     }
     document.getElementById("winner").innerHTML = ``;
-    newGame = new Game();
+    newGame.restart()
     console.log(` the newGame instance after next round will start to be`, newGame)
 })
 
@@ -161,7 +164,7 @@ document.getElementById("reset").addEventListener("click", () => {
     document.getElementById("winner").innerHTML = ``;
     scorePlayer1.innerHTML = 0;
     scorePlayer2.innerHTML = 0;
-    newGame = new Game();
+    newGame.reset();
 })
 
 
