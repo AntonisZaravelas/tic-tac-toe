@@ -53,10 +53,21 @@ body{
 .upper-part>div{
   margin-right:30px;
   margin-top:10px;
+  text-align:center;
+  
+}
+.child3,.child4{
+  margin-right:0 !important;
 }
 
 .upper-part > div > p {
   margin-bottom:10px;
+  text-align:center;
+}
+
+
+.upper-part>div>button{
+  text-align:center;
 }
 
 button{
