@@ -67,3 +67,14 @@ button{
   justify-content: center;
   font-size:5rem;
 }
+
+#reset{
+  color:black;
+  border:1px solid red;
+}
+
+#reset:hover{
+  cursor:pointer;
+  color:white;
+  background-color: red;
+}
