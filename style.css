@@ -54,11 +54,9 @@ body{
   margin-right:30px;
   margin-top:10px;
   text-align:center;
-  
 }
-.child3,.child4{
-  margin-right:0 !important;
-}
+
+
 
 .upper-part > div > p {
   margin-bottom:10px;
@@ -116,5 +114,9 @@ button{
 @media only screen and (max-width:900px){
   .game-container{
     width:90%;
+  }
+
+  .child3,.child4{
+    margin-right:0 !important;
   }
 }
