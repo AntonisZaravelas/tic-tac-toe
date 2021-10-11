@@ -1,30 +1,58 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Module | Antonis</title>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
     <meta name="description" content="a simple module project">
     <meta name="keywords" content="module, project, JS">
     <meta name="author" content="antonis zaravelas">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="game">
         <h1>Welcome to Tic Tac Toe</h1>
+        <button class="start">Start the Game!</button>
+
+        <div class="upper-part">
+            <div class="child1">
+                <p id="#player1">XPlayer</p>
+                <button class="score">X</button>
+            </div>
+
+            <div class="child2">
+                <p id="#player2">YPlayer</p>
+                <button class="score">X</button>
+            </div>
+
+            <div class="child3">
+                <p>Next Round</p>
+                <button class="restart">Click Me!</button>
+            </div>
+
+         
+        </div>
+        <div class="announcement">
+            <p style="font-weight:bold" class="announcement1"></p>
+            <p style="font-weight:bold" class="announcement2"></p>
+        </div>
+
         <div class="game-container">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
-            <div class="box7"></div>
-            <div class="box8"></div>
-            <div class="box9"></div>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
