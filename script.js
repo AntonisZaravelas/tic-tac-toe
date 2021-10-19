@@ -170,4 +170,4 @@ document.getElementById("reset").addEventListener("click", () => {
 
 startTheGame.addEventListener("click", starting, {
     once: true
-});
+});  
