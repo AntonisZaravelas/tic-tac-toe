@@ -42,14 +42,20 @@ class Game {
 
     checking(player1, player2) {
         // i will check if someone won
+
+        // vertical
         let value1 = this.boxesArray.every(ar => ar[0] == "O");
         let value2 = this.boxesArray.every(ar => ar[1] == "O");
         let value3 = this.boxesArray.every(ar => ar[2] == "O");
         let value4 = this.boxesArray.every(ar => ar[0] == "X");
         let value5 = this.boxesArray.every(ar => ar[1] == "X");
         let value6 = this.boxesArray.every(ar => ar[2] == "X");
+     
+        // horizontal 
         let value7 = this.boxesArray.some(ar => ar[0] === "X" && ar[1] === "X" && ar[2] === "X");
         let value8 = this.boxesArray.some(ar => ar[0] === "O" && ar[1] === "O" && ar[2] === "O");
+
+        // diagonal
         let value9 = [this.boxesArray[0][0], this.boxesArray[1][1], this.boxesArray[2][2]].every(x => x == "O");
         let value10 = [this.boxesArray[0][2], this.boxesArray[1][1], this.boxesArray[2][0]].every(x => x == "O");
         let value11 = [this.boxesArray[0][0], this.boxesArray[1][1], this.boxesArray[2][2]].every(x => x == "X");
@@ -86,7 +92,6 @@ class Game {
                 this.boxesArray[2][2] = OX
         }
 
-        console.log(this.boxesArray);
     }
 }
 
